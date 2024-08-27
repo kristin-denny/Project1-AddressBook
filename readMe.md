@@ -1,7 +1,6 @@
 Project 1 Address Book with a login feature
 
 User Story:
-
 -When a user accesses the page, they see a prompt to login or register
 -A user is able to create a login email and password
 -The Email and Password is stored on the local data
