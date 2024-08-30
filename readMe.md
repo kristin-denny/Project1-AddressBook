@@ -1,8 +1,9 @@
-Project 1 Address Book with a login feature
+Project 1 Address Book
 
 User Story:
 - User is able to create new addresses and view already existing
--User can also edit exisitng addresses
+- User can also edit exisitng addresses
+- User can print all adresses from local storage
 
 Acceptance Criteria:
 - Local Data stores addresses
