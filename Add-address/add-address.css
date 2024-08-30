@@ -1,0 +1,15 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
+.textInput {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.textInput input {
+  flex: 1;
+}
+
+.textInput label {
+  width: 30%;
+}
