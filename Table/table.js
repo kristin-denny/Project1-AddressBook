@@ -1,4 +1,4 @@
-const mainPiece = document.querySelector('main');
+const mainPiece = document.querySelector('body');
 
 function printAddress(infoToAppend){
     const cardBase = document.createElement('article');
@@ -49,7 +49,7 @@ function printTable(){
         console.log('emptyempty');
     }
     else{
-        for (var x = 1; x < localStorage.length; x++) {
+        for (var x = 0; x < localStorage.length; x++) {
             infoToPass = JSON.parse(localStorage.getItem(localStorage.key(x)));
             printAddress(infoToPass);
             
