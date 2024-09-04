@@ -1,6 +1,7 @@
-const mainPiece = document.querySelector('body');
+const mainPiece = document.querySelector('main');
 
 function printAddress(infoToAppend){
+
     const cardBase = document.createElement('article');
     cardBase.classList.add('card');
 
