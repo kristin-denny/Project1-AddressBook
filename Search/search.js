@@ -19,8 +19,9 @@ document.getElementById("searchInput").addEventListener("submit", function (even
     });
 
     if(isThere){
-        window.location.assign("display.js");
-        printAddress(isThere, indexOfItem);
+         printAddress(isThere, indexOfItem);
+         window.location.assign("display.js");
+       
     }
     else{
         const noneFound = document.createElement('h2');

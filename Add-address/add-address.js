@@ -33,6 +33,7 @@ document.getElementById("addressEntry").addEventListener("submit", function (eve
      addressBook.push(addressEntry);
 
      localStorage.setItem("addressBook", JSON.stringify(addressBook));
+     window.location.assign("./Additional/additional.html")
 
 });
 
