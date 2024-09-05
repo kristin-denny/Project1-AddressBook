@@ -8,9 +8,8 @@ console.log(toSearchPage);
 
 toSearchPage.addEventListener('click', function(){
     
-    window.location.replace("http://127.0.0.1:5500/Search/search.html");
     console.log("search clicked");
-    window.location.replace("http://Search/search.html")
+    window.location.replace("http://mcirillo93.github.io/Project1-AddressBook/Search/search.html")
 
 });
 
@@ -18,14 +17,14 @@ toAddPage.addEventListener('click', function(){
     
     //window.location.replace("url");
     console.log("add clicked");
-    window.location.replace("http://Add-address/add-address.html")
+    window.location.replace("https://mcirillo93.github.io/Project1-AddressBook/Add-address/add-address.html")
 });
 
 toPrintAllPage.addEventListener('click', function(){
     
    // window.location.replace("url");
     console.log("print all clicked");
-    window.location.replace("http://Address-Display/display.html")
+    window.location.replace("http://mcirillo93.github.io/Project1-AddressBook/Address-Display/display.html")
 });
 
 toAboutPage.addEventListener('click', function(){

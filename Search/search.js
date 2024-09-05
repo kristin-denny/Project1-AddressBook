@@ -1,3 +1,2 @@
 //append if nothing shows up
-
-onclick="window.location.href='http://127.0.0.1:5500/index.html'"
+window.location.replace ("http://mcirillo93.github.io/Project1-AddressBook/index.html")

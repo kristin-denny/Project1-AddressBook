@@ -18,3 +18,5 @@ document.getElementById("Yes").addEventListener("click", function (event) {
 
 
 });
+
+window.location.replace ("http://index.html")

@@ -20,5 +20,7 @@ document.getElementById("addressEntry").addEventListener("submit", function (eve
      }
 
      localStorage.setItem(addressEntry.name, JSON.stringify(addressEntry));
+     
 
 });
+window.location.replace ("http://index.html")
