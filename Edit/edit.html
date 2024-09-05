@@ -10,9 +10,14 @@
     <!-- <script defer src="logic.js"></script> -->
 
 </head>
+<button 
+        id="returnSearch"
+        type="submit"
+        onclick="window.location.href='http://127.0.0.1:5500/Search/search.html'">
+        </button> Return to Search</button>
 <body>
     <header>
-        <button id="returnSearch">Return to Search</button>
+        
     </header>
 
     <main>
@@ -35,7 +40,8 @@
                 <input type="text" id="state" name="state" required>
                 <button type="reset">Clear</button>
                 <button type="reset">Cancel</button>
-                <button type="submit">Save</button>
+                <button type="submit"
+                onclick="window.location.href='http://127.0.0.1:5500/Address-Display/display.html'"> Submit</button>
             </form>
 
         </main>
