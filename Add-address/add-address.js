@@ -23,4 +23,4 @@ document.getElementById("addressEntry").addEventListener("submit", function (eve
      
 
 });
-window.location.replace ("http://index.html")
+window.location.replace ("http://mcirillo93.github.io/Project1-AddressBook/index.html")
