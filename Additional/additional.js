@@ -1,3 +1,9 @@
+
+const mainPiece = document.querySelector('main');
+
+
+
+
 document.getElementById("No").addEventListener("click", function (event) {
     event.preventDefault();
 
@@ -18,3 +24,5 @@ document.getElementById("Yes").addEventListener("click", function (event) {
 
 
 });
+
+

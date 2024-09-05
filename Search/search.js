@@ -9,6 +9,7 @@ document.getElementById("searchInput").addEventListener("submit", function (even
     const searchFor = searchChoice.value;
     const addressBook = JSON.parse(localStorage.getItem("addressBook"));
     
+
     const isThere = addressBook.find(function(element, index){ 
         if(searchFor in element){ 
             indexOfItem = index;
@@ -18,15 +19,21 @@ document.getElementById("searchInput").addEventListener("submit", function (even
         }
     });
 
+
     if(isThere){
          printAddress(isThere, indexOfItem);
          window.location.assign("display.js");
        
     }
     else{
+
         const noneFound = document.createElement('h2');
         noneFound.textContent = "None found.";
         mainPiece.appendChild(noneFound);
     }
+    
+    
+    
+    
 });
 
