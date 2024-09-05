@@ -1,0 +1,27 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+.button-group1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.button-group-2 {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.selectButton {
+  margin-right: 10px;
+}
+
+.searchbox input {
+  margin-right: 10px;
+}

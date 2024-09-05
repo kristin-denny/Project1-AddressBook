@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>None Found</title>
-    <link rel="stylesheet" href="noneFound.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Not Found</title>
+    <link rel="stylesheet" href="noneFound.css" />
     <script src="noneFound.js"></script>
-</head>
-    <main>
-<button id="returnHome">Return Home</button>
-<body>
-    <header id="errorMessage"><strong>None found, please try again!</strong></header>
-    <div id="searchBar">
-        <button id="dropDown"> Drop Down</button>
-        <input type="text"></input>
-        <button id="search"> Search</button>
-    </div>
-    
+  </head>
+  <main>
+    <button
+      class="button is-link is-small button-group1"
+      onClick="location.href='../index.html'"
+    >
+      Return Home
+    </button>
+    <body>
+      <header id="errorMessage">
+        <span class="tag is-danger">None found, please try again!</span>
+      </header>
 
-    <footer>
-        <button id="About">About</button>
-        <button id="Contact">Contact Us</button>
-</body>
-    </main>
+      <div class="searchContainer">
+        <div id="searchDropDown" class="select is-link selectButton">
+          <select>
+            <option value="name">Full Name</option>
+            <option value="phonenumber">Phone Number</option>
+            <option value="streetAddress">Street Address</option>
+            <option value="city">City</option>
+            <option value="state">States</option>
+          </select>
+        </div>
+
+        <div class="searchbox">
+          <form action="Search">
+            <input type="text" id="searchBar" name="name" required />
+            <button class="button is-link is-small">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <footer>
+        <div class="buttons button-group-2">
+          <button class="button is-link is-outlined">About</button>
+          <button class="button is-link is-outlined">Contact Us</button>
+        </div>
+      </footer>
+    </body>
+  </main>
 </html>
