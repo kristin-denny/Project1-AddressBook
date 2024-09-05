@@ -8,7 +8,7 @@ console.log(toSearchPage);
 
 toSearchPage.addEventListener('click', function(){
     
-    //window.location.replace("url");
+    window.location.replace("http://127.0.0.1:5500/Search/search.html");
     console.log("search clicked");
     window.location.replace("http://Search/search.html")
 
