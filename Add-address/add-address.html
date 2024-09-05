@@ -1,39 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Address </title>
-    <link rel="stylesheet" href="add-address.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Address</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="add-address.css" />
     <script src="add-address.js"></script>
-</head>
-    <main>
-<button id="returnHome">Return Home</button>
+  </head>
+  <body>
+    <button
+      class="button is-link is-small button-group1"
+      onClick="location.href='../index.html'"
+    >
+      Return Home
+    </button>
 
-<header id="PleaseEnterAddress"><strong>Please Enter Address</strong></header>
-        <body>
-<div class="AddAddress">
-    <form action="add-address" method="post">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="phoneNumber">Phone Number:</label>
-        <input type="text" id="phoneNumber" name="phone" required>
-        <label for="phone">Street Address:</label>
-        <input type="text" id="streetAddress" name="streetAddress" required>
-        <label for="city">City</label>
-        <input type="text" id="city" name="city" required>
-        <label for="state">State</label>
-        <input type="text" id="state" name="state" required>
-        <button type="submit">Add</button>
-    </form>
-</div>
-        </body>
+    <header id="PleaseEnterAddress">
+      <strong>Please Enter Address</strong>
+    </header>
 
-    <footer>
-        <button id="About">About</button>
-        <button id="Contact">Contact Us</button>
-    </footer>
-    
-</body>
-    </main>
+    <div class="AddAddress">
+      <form action="add-address.php" method="post">
+        <div class="textInput">
+          <label for="name">Full Name:</label>
+          <input
+            class="input is-link is-small is-fullwidth"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+
+        <div class="textInput">
+          <label for="phoneNumber">Phone Number:</label>
+          <input
+            class="input is-link is-small"
+            type="text"
+            id="phoneNumber"
+            name="phone"
+            required
+          />
+        </div>
+
+        <div class="textInput">
+          <label for="streetAddress">Street Address:</label>
+          <input
+            class="input is-link is-small"
+            type="text"
+            id="streetAddress"
+            name="streetAddress"
+            required
+          />
+        </div>
+
+        <div class="textInput">
+          <label for="city">City:</label>
+          <input
+            class="input is-link is-small"
+            type="text"
+            id="city"
+            name="city"
+            required
+          />
+        </div>
+
+        <div class="textInput">
+          <label for="state">State:</label>
+          <input
+            class="input is-link is-small"
+            type="text"
+            id="state"
+            name="state"
+            required
+          />
+        </div>
+
+        <div class="buttons">
+          <button class="button is-link is-dark">Add Address</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="ContactUs">
+      <div class="buttons button-group-2">
+        <button class="button is-link is-outlined">About</button>
+        <button class="button is-link is-outlined">Contact Us</button>
+      </div>
+    </div>
+  </body>
 </html>

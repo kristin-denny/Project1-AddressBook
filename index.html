@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <script defer src="./welcome.js" ></script>
-    <title>My Address Book</title>
-</head>
-    <main>
-<header id="Welcome"><strong>Welcome!</strong></header>
-<style>
-  #Welcome{
-    text-align: center;
-    font-size: 50px;
-    color: rgb(5, 5, 5);
-  }
-  </style>
-    
-<body>
- 
-  <div class="Mains">
-    <h1 id="Search">
-        <strong>Search</strong>
-    </h1>
-    <h2 id="Add">
-        <strong>Add</strong>
-    </h2>
-    <h3 id="Print All">
-        <strong>Print All</strong>
-    </h3>
-    </div>
-    
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-    <footer>
-    <button id="About">About</button>
-    <button id="Contact">Contact Us</button>
-  
-    
-</body>
-    </main>
-    
+    <link rel="stylesheet" href="/Welcome/welcome.css" />
+    <title>My Address Book</title>
+  </head>
+  <body>
+    <header id="Welcome">
+      <strong>Welcome To Your Address book</strong>
+    </header>
+
+    <div class="buttons is-centered button-group-1">
+      <button
+        class="button is-link"
+        onClick="location.href
+        ='../Search/search.html'"
+      >
+        Search
+      </button>
+      <button
+        class="button is-link"
+        onClick="location.href='../Add-address/add-address.html'"
+      >
+        Add
+      </button>
+      <button class="button is-link">Print All</button>
+    </div>
+
+    <div class="buttons button-group-2">
+      <button class="button is-link is-outlined">About</button>
+      <button class="button is-link is-outlined">Contact Us</button>
+    </div>
+  </body>
 </html>
