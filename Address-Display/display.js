@@ -55,8 +55,7 @@ document.getElementById("Edit").addEventListener("click", function (event) {
     let key = keyId.value;
     const indexOfEdit = localStorage.getItem(key);
     editEntry(indexOfEdit);
-    // redirect to edit page
-     //window.location.assign("url");
+    window.location.assign("./Edit/edit.html");
      
 
 });
@@ -69,7 +68,7 @@ document.getElementById("Delete").addEventListener("click", function (event) {
     const addressBook = JSON.parse(localStorage.getItem("addressBook"));
     addressBook.splice(indexOfDelete, 1);
     localStorage.setItem("addressBook", JSON.stringify(addressBook));
-     //window.location.assign("url");
+    window.location.assign("./index.html");
      
 
 
