@@ -1,15 +1,19 @@
-function intializeStorage(){
-    if(localStorage.length == 0){
-        const addressBook = [];
-        localStorage.setItem("addressBook"), JSON.stringify(addressBook);
+// function intializeStorage(){
+//     if(localStorage.length == 0){
+//         const addressBook = [];
+//         localStorage.setItem("addressBook"), JSON.stringify(addressBook);
 
-    }
+//     }
 
-}
+// }
 
 document.getElementById("addressEntry").addEventListener("submit", function (event) {
     event.preventDefault();
-    const addressBook = JSON.parse(localStorage.getItem("addressBook"));
+
+    
+    const addressBook = JSON.parse(localStorage.getItem("addressBook")) || [];
+     
+
     let nameToSave = document.getElementById("name").value;
     let phoneNumberToSave =  document.getElementById("phoneNumber").value;
     let streetAddressToSave = document.getElementById("streetAddress").value;
@@ -32,4 +36,4 @@ document.getElementById("addressEntry").addEventListener("submit", function (eve
 
 });
 
-intializeStorage();
+//intializeStorage();

@@ -19,7 +19,7 @@ document.getElementById("searchInput").addEventListener("submit", function (even
     });
 
     if(isThere){
-        window.location.assign("./display.html");
+        window.location.assign("display.js");
         printAddress(isThere, indexOfItem);
     }
     else{
