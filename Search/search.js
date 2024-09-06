@@ -22,7 +22,7 @@ document.getElementById("searchInput").addEventListener("submit", function (even
 
     if(isThere){
          printAddress(isThere, indexOfItem);
-         window.location.assign("display.js");
+         window.location.assign("display.html");
        
     }
     else{
