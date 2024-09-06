@@ -25,7 +25,8 @@ document.getElementById("addressEntry").addEventListener("submit", function (eve
      addressBook.push(addressEntry);
 
      localStorage.setItem("addressBook", JSON.stringify(addressBook));
-     window.location.assign("/additional.html")
+
+     window.location.assign("Project1-AddressBook/Additional/additional.html")
 
 });
 
