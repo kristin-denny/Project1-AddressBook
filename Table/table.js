@@ -1,61 +1,64 @@
-const mainPiece = document.querySelector('main');
+const mainPiece = document.querySelector("main");
 
-function printAddress(infoToAppend){
-    const cardBase = document.createElement('article');
-    cardBase.classList.add('card');
+const rows = document.querySelectorAll("table tbody tr");
 
-    const nameHeader = document.createElement('h2');
-    nameHeader.textContent = "Name";
-    const nameToAdd = document.createElement('p');
-    nameToAdd.textContent = infoToAppend.name;
+rows.forEach((row) => {
+  row.addEventListener("click", function () {
+    this.classList.toggle("is-selected");
+  });
+});
 
-    const phoneHeader = document.createElement('h2');
-    phoneHeader.textContent = "Phone Number";
-    const phoneToAdd = document.createElement('p');
-    phoneToAdd.textContent = infoToAppend.phoneNumber;
+function printAddress(infoToAppend) {
+  const cardBase = document.createElement("article");
+  cardBase.classList.add("card");
 
-    const streetHeader = document.createElement('h2');
-    streetHeader.textContent = "Street Address";
-    const streetToAdd = document.createElement('p');
-    streetToAdd.textContent = infoToAppend.streetAddress;
+  const nameHeader = document.createElement("h2");
+  nameHeader.textContent = "Name";
+  const nameToAdd = document.createElement("p");
+  nameToAdd.textContent = infoToAppend.name;
 
-    const cityHeader = document.createElement('h2');
-    cityHeader.textContent = "City";
-    const cityToAdd = document.createElement('p');
-    cityToAdd.textContent = infoToAppend.city;
+  const phoneHeader = document.createElement("h2");
+  phoneHeader.textContent = "Phone Number";
+  const phoneToAdd = document.createElement("p");
+  phoneToAdd.textContent = infoToAppend.phoneNumber;
 
-    const stateHeader = document.createElement('h2');
-    stateHeader.textContent = "State";
-    const stateToAdd = document.createElement('p');
-    stateToAdd.textContent = infoToAppend.state;
+  const streetHeader = document.createElement("h2");
+  streetHeader.textContent = "Street Address";
+  const streetToAdd = document.createElement("p");
+  streetToAdd.textContent = infoToAppend.streetAddress;
 
-    mainPiece.appendChild(cardBase);
-    cardBase.appendChild(nameHeader);
-    cardBase.appendChild(nameToAdd);
-    cardBase.appendChild(phoneHeader);
-    cardBase.appendChild(phoneToAdd);
-    cardBase.appendChild(streetHeader);
-    cardBase.appendChild(streetToAdd);
-    cardBase.appendChild(cityHeader);
-    cardBase.appendChild(cityToAdd);
-    cardBase.appendChild(stateHeader);
-    cardBase.appendChild(stateToAdd);
-    
+  const cityHeader = document.createElement("h2");
+  cityHeader.textContent = "City";
+  const cityToAdd = document.createElement("p");
+  cityToAdd.textContent = infoToAppend.city;
 
-};
+  const stateHeader = document.createElement("h2");
+  stateHeader.textContent = "State";
+  const stateToAdd = document.createElement("p");
+  stateToAdd.textContent = infoToAppend.state;
 
-function printTable(){
-    if(localStorage.length == 0) {
-        console.log('emptyempty');
+  mainPiece.appendChild(cardBase);
+  cardBase.appendChild(nameHeader);
+  cardBase.appendChild(nameToAdd);
+  cardBase.appendChild(phoneHeader);
+  cardBase.appendChild(phoneToAdd);
+  cardBase.appendChild(streetHeader);
+  cardBase.appendChild(streetToAdd);
+  cardBase.appendChild(cityHeader);
+  cardBase.appendChild(cityToAdd);
+  cardBase.appendChild(stateHeader);
+  cardBase.appendChild(stateToAdd);
+}
+
+function printTable() {
+  if (localStorage.length == 0) {
+    console.log("emptyempty");
+  } else {
+    for (var x = 1; x < localStorage.length; x++) {
+      infoToPass = JSON.parse(localStorage.getItem(localStorage.key(x)));
+      printAddress(infoToPass);
     }
-    else{
-        for (var x = 1; x < localStorage.length; x++) {
-            infoToPass = JSON.parse(localStorage.getItem(localStorage.key(x)));
-            printAddress(infoToPass);
-            
-        }
-    }
-
-};
+  }
+}
 
 printTable();
