@@ -1,6 +1,7 @@
 const mainPiece = document.querySelector('main');
 
 function printAddress(infoToAppend){
+
     const cardBase = document.createElement('article');
     cardBase.classList.add('card');
 
@@ -45,12 +46,14 @@ function printAddress(infoToAppend){
 };
 
 function printTable(){
-    if(localStorage.length == 0) {
+    const addressBook = JSON.parse(localStorage.getItem("addressBook"));
+
+    if(addressBook.length == 0) {
         console.log('emptyempty');
     }
     else{
-        for (var x = 1; x < localStorage.length; x++) {
-            infoToPass = JSON.parse(localStorage.getItem(localStorage.key(x)));
+        for (var x = 0; x < addressBook.length; x++) {
+            let infoToPass = addressBook[x];
             printAddress(infoToPass);
             
         }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,3 +53,49 @@
     </body>
   </main>
 </html>
+=======
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Address</title>
+    <link rel="stylesheet" href="search.css" />
+    <script defer src="./search.js"></script>
+    <!-- <script defer src="./logic.js"></script> -->
+</head>
+
+<body>
+    <header>
+        <button id="returnHome">Return Home</button>
+    </header>
+
+    <main>
+
+
+        <label for="searchDropDown">What would you like to search by?</label>
+        <select name="searchDropDown" id="searchDropDown">
+            <option value="name">Full Name</option>
+            <option value="phoneNumber">Phone Number</option>
+            <option value="streetAddress">Street Address</option>
+            <option value="city">City</option>
+            <option value="state">State</option>
+        </select>
+
+        <div>
+            <form id="searchInput">
+                <label for="searchBar">Find:</label>
+                <input type="text" id="searchBar" name="searchBar" required>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <button id="About">About</button>
+        <button id="Contact">Contact Us</button>
+    </footer>
+
+</body>
+
+</html>
+>>>>>>> main

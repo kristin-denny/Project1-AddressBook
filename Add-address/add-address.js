@@ -1,13 +1,24 @@
+// function intializeStorage(){
+//     if(localStorage.length == 0){
+//         const addressBook = [];
+//         localStorage.setItem("addressBook"), JSON.stringify(addressBook);
 
+//     }
+
+// }
 
 document.getElementById("addressEntry").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    nameToSave = document.getElementById("name").value;
-    phoneNumberToSave =  document.getElementById("phoneNumber").value;
-    streetAddressToSave = document.getElementById("streetAddress").value;
-    cityToSave = document.getElementById("city").value
-    stateToSave = document.getElementById("state").value;
+    
+    const addressBook = JSON.parse(localStorage.getItem("addressBook")) || [];
+     
+
+    let nameToSave = document.getElementById("name").value;
+    let phoneNumberToSave =  document.getElementById("phoneNumber").value;
+    let streetAddressToSave = document.getElementById("streetAddress").value;
+    let cityToSave = document.getElementById("city").value
+    let stateToSave = document.getElementById("state").value;
 
      
     const addressEntry = {
@@ -18,7 +29,12 @@ document.getElementById("addressEntry").addEventListener("submit", function (eve
              state: stateToSave
      
      }
+     
+     addressBook.push(addressEntry);
 
-     localStorage.setItem(addressEntry.name, JSON.stringify(addressEntry));
+     localStorage.setItem("addressBook", JSON.stringify(addressBook));
+     window.location.assign("./Additional/additional.html")
 
 });
+
+//intializeStorage();
