@@ -1,5 +1,4 @@
 const returnHome = document.getElementById("returnHome");
-const returnToSearch = document.getElementById("returnSearch");
 const toAboutPage = document.getElementById("About");
 const toContactPage = document.getElementById("Contact");
 
@@ -21,9 +20,6 @@ returnHome.addEventListener('click', function(event){
     
 });
 
-returnToSearch.addEventListener('click', function(event){
-    event.preventDefault();
-    window.location.assign("./Search/search.html");
-    
-});
+
+
 
