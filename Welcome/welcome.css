@@ -1,1 +1,18 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+.button-group-1 .button {
+  margin-top: 20px;
+}
+.button-group-2 .button {
+  margin-top: 5px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#Welcome {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(5, 5, 5);
+  margin-top: 150px;
+}
