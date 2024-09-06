@@ -1,11 +1,3 @@
-// function intializeStorage(){
-//     if(localStorage.length == 0){
-//         const addressBook = [];
-//         localStorage.setItem("addressBook"), JSON.stringify(addressBook);
-
-//     }
-
-// }
 
 document.getElementById("addressEntry").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -33,8 +25,8 @@ document.getElementById("addressEntry").addEventListener("submit", function (eve
      addressBook.push(addressEntry);
 
      localStorage.setItem("addressBook", JSON.stringify(addressBook));
-     window.location.assign("./Additional/additional.html")
+     window.location.assign("/Project1-AddressBook/Additional/additional.html")
 
 });
 
-//intializeStorage();
+
