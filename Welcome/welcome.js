@@ -26,12 +26,12 @@ toPrintAllPage.addEventListener('click', function(event){
 
 toContactPage.addEventListener('click', function(event){
     event.preventDefault();
-    window.location.assign("./contact.html");
+    window.location.assign("contact.html");
     
 });
 
 toAboutPage.addEventListener('click', function(event){
     event.preventDefault();
-    window.location.assign("./about.html");
+    window.location.assign("about.html");
     
 });

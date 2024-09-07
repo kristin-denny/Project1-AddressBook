@@ -4,19 +4,19 @@ const toContactPage = document.getElementById("Contact");
 
 toContactPage.addEventListener('click', function(event){
     event.preventDefault();
-    window.location.assign("./contact.html");
+    window.location.assign("../contact.html");
     
 });
 
 toAboutPage.addEventListener('click', function(event){
     event.preventDefault();
-    window.location.assign("./about.html");
+    window.location.assign("../about.html");
     
 });
 
 returnHome.addEventListener('click', function(event){
     event.preventDefault();
-    window.location.assign("./index.html");
+    window.location.assign("../index.html");
     
 });
 
