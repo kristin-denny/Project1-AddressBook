@@ -27,9 +27,7 @@ document.getElementById("searchInput").addEventListener("submit", function (even
     }
     else{
 
-        const noneFound = document.createElement('h2');
-        noneFound.textContent = "None found.";
-        mainPiece.appendChild(noneFound);
+        alert("None found, please try again.");
     }
     
     
