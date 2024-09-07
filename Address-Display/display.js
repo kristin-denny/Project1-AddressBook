@@ -1,4 +1,4 @@
-const mainPiece = document.querySelector('main');
+const mainToAppend = document.querySelector('main');
 
 function printAddress(infoToAppend, indexOfItem){
 
@@ -33,7 +33,7 @@ function printAddress(infoToAppend, indexOfItem){
     const stateToAdd = document.createElement('p');
     stateToAdd.textContent = infoToAppend.state;
 
-    mainPiece.appendChild(cardBase);
+    mainToAppend.appendChild(cardBase);
     cardBase.appendChild(nameHeader);
     cardBase.appendChild(nameToAdd);
     cardBase.appendChild(phoneHeader);
