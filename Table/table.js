@@ -55,7 +55,7 @@ function printTable() {
         const noneHeader = document.createElement('h2');
         noneHeader.textContent = "No entries yet.";
         mainPiece.appendChild(cardBase);
-        cardBase.appendChild(noneHeaderHeader);
+        cardBase.appendChild(noneHeader);
     }
     else {
         for (var x = 0; x < addressBook.length(); x++) {
