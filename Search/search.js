@@ -3,10 +3,10 @@ const mainPiece = document.querySelector('main');
 
 document.getElementById("searchInput").addEventListener("submit", function (event) {
     event.preventDefault();
-    const searchChoice = document.getElementById("searchDropDown");
+    // const searchChoice = document.getElementById("searchDropDown");
     let indexOfItem;
-    //const findThis = document.getElementById("searchBar");
-    const searchFor = searchChoice.value;
+    const findThis = document.getElementById("searchBar");
+    const searchFor = findThis.value;
     const addressBook = JSON.parse(localStorage.getItem("addressBook"));
     
 
