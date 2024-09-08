@@ -55,7 +55,7 @@ function printAddress(){
 document.getElementById("Edit").addEventListener("click", function (event) {
     event.preventDefault();
 
-    window.location.assign("/Edit/edit.html");
+    window.location.assign("../Edit/edit.html");
      
 
 });
