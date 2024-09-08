@@ -9,8 +9,7 @@ document.getElementById("searchInput").addEventListener("submit", function (even
     const findThis = document.getElementById("searchBar");
     const searchFor = findThis.value;
     const addressBook = JSON.parse(localStorage.getItem("addressBook"));
-    console.log(searchFor);
-    console.log(lookIn);
+    
     
 
 
