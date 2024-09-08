@@ -19,7 +19,7 @@ document.getElementById("Yes").addEventListener("click", function (event) {
     event.preventDefault();
 
     //redirect to add page
-    window.location.assign("../Add-address/add-address.js");
+    window.location.assign("../Add-address/add-address.html");
     //console.log("yes pls");
 
 
