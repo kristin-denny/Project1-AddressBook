@@ -62,7 +62,7 @@ function editEntry(){
 
         addressBook[objprop] = replaceWith;
         localStorage.setItem("addressBook", JSON.stringify(addressBook));
-        location.reload();
+       
 
     });
   
