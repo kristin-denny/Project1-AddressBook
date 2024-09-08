@@ -57,7 +57,7 @@ function printTable() {
         cardBase.appendChild(noneHeaderHeader);
     }
     else {
-        for (var x = 0; x < addressBook.length; x++) {
+        for (var x = 0; x < addressBook.length(); x++) {
             let infoToPass = addressBook[x];
             printAddress(infoToPass);
 
