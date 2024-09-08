@@ -53,7 +53,7 @@ function editEntry(){
     document.getElementById("editInput").addEventListener("submit", function (event) {
         event.preventDefault();
         const searchChoice = document.getElementById("editDropDown");
-        const editThis = document.getElementById("editedText");
+        const editThis = document.getElementById("editedInput");
         const objprop = searchChoice.value;
         const replaceWith = editThis.value;
 
