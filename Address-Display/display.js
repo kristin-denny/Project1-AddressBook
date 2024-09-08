@@ -1,11 +1,14 @@
 const mainToAppend = document.querySelector('main');
+const indexOf = localStorage.getItem("foundAt");
+const addressBook = JSON.parse(localStorage.getItem("addressBook"));
 
-function printAddress(infoToAppend, indexOfItem){
+function printAddress(){
+   
+    const infoToAppend = addressBook[indexOf];
 
     const cardBase = document.createElement('article');
     cardBase.classList.add('card');
     
-
     const nameHeader = document.createElement('h2');
     nameHeader.textContent = "Name";
     const nameToAdd = document.createElement('p');
@@ -45,16 +48,13 @@ function printAddress(infoToAppend, indexOfItem){
     cardBase.appendChild(stateHeader);
     cardBase.appendChild(stateToAdd);
     
-    localStorage.setItem(phoneText, indexOfItem);
+    
 
 };
 
 document.getElementById("Edit").addEventListener("click", function (event) {
     event.preventDefault();
-    let keyId = document.getElementById("phone");
-    let key = keyId.value;
-    const indexOfEdit = localStorage.getItem(key);
-    editEntry(indexOfEdit);
+
     window.location.assign("/Edit/edit.html");
      
 
@@ -62,11 +62,8 @@ document.getElementById("Edit").addEventListener("click", function (event) {
 
 document.getElementById("Delete").addEventListener("click", function (event) {
     event.preventDefault();
-    let keyId = document.getElementById("phone");
-    let key = keyId.value;
-    const indexOfDelete = localStorage.getItem(key);
-    const addressBook = JSON.parse(localStorage.getItem("addressBook"));
-    addressBook.splice(indexOfDelete, 1);
+    
+    addressBook.splice(indexOf, 1);
     localStorage.setItem("addressBook", JSON.stringify(addressBook));
     window.location.assign("../index.html");
      

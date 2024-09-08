@@ -1,8 +1,10 @@
 const mainPiece = document.querySelector('main');
+const indexOf = localStorage.getItem("foundAt");
+const addressBook = JSON.parse(localStorage.getItem("addressBook"));
 
-function editEntry(indexOfEdit){
-    const addressBook = JSON.parse(localStorage.getItem("addressBook"));
-    const infoToAppend = addressBook[indexOfEdit];
+function editEntry(){
+    
+    const infoToAppend = addressBook[indexOf];
 
     const cardBase = document.createElement('article');
     cardBase.classList.add('card');

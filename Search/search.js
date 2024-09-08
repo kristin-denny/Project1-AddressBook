@@ -13,7 +13,7 @@ document.getElementById("searchInput").addEventListener("submit", function (even
     const isThere = addressBook.find(function(element, index){ 
         if(searchFor in element){ 
             indexOfItem = index;
-            return element;
+            return true;
         }else{
             return false;
         }
@@ -21,7 +21,7 @@ document.getElementById("searchInput").addEventListener("submit", function (even
 
 
     if(isThere){
-         printAddress(isThere, indexOfItem);
+        localStorage.setItem("foundAt", indexOfItem);
          window.location.assign("../Address-Display/display.html");
        
     }
