@@ -17,10 +17,11 @@ document.getElementById("searchInput").addEventListener("submit", function (even
    const isThere = addressBook.find((address, index) => {if(address[lookIn] == searchFor){
         indexOfItem = index;
         console.log(address);
+        console.log(indexOfItem);
    }});
    
   
-
+   console.log(isThere);
 
     if(isThere){
         localStorage.setItem("foundAt", indexOfItem);
