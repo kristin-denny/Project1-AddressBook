@@ -48,7 +48,7 @@ function printAddress(infoToAppend) {
 function printTable() {
     const addressBook = JSON.parse(localStorage.getItem("addressBook")) || [];
 
-    if (addressBook.length() === 0) {
+    if (addressBook.length == 0){
 
         const cardBase = document.createElement('article');
         cardBase.classList.add('card');
