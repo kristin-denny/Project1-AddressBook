@@ -8,17 +8,18 @@ document.getElementById("searchInput").addEventListener("submit", function (even
     let indexOfItem;
     const findThis = document.getElementById("searchBar");
     const searchFor = findThis.value;
-    console.log(searchFor);
-    console.log(lookIn);
     const addressBook = JSON.parse(localStorage.getItem("addressBook"));
     
-    const isThere = addressBook.find((address) => address[lookIn] === searchFor);
-    
+   const isThere = addressBook.find((address, index) => {if(address[lookIn] === searchFor){
+        indexOfItem = index;
+   }});
+   
+  
 
 
     if(isThere){
         localStorage.setItem("foundAt", indexOfItem);
-         window.location.assign("../Address-Display/display.html");
+        window.location.assign("../Address-Display/display.html");
        
     }
     else{
