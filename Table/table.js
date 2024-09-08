@@ -46,7 +46,7 @@ function printAddress(infoToAppend) {
 };
 
 function printTable() {
-    const addressBook = JSON.parse(localStorage.getItem("addressBook"));
+    const addressBook = JSON.parse(localStorage.getItem("addressBook")) || [];
 
     if (addressBook.length() === 0) {
 
