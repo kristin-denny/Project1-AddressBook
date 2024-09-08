@@ -26,7 +26,7 @@ document.getElementById("addressEntry").addEventListener("submit", function (eve
 
      localStorage.setItem("addressBook", JSON.stringify(addressBook));
 
-     window.location.assign("./Additional/additional.html")
+     window.location.assign("../Additional/additional.html")
 
 });
 
