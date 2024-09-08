@@ -20,7 +20,7 @@ toAddPage.addEventListener('click', function(event){
 
 toPrintAllPage.addEventListener('click', function(event){
     event.preventDefault();
-    window.location.assign("Table/table.js");
+    window.location.assign("Table/table.html");
     //console.log("print all clicked");
 });
 
