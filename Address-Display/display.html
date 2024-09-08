@@ -1,28 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Address Book</title>
-    <link rel="stylesheet" href="display.css">
-    <script src="display.js"></script>
+    <link rel="stylesheet" href="display.css" />
+    <script defer src="./display.js"></script>
+    <script defer src="./Search/search.js"></script>
+    <!-- <script defer src="logic.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <button id="returnHome">Return Home</button>
+    </header>
 
-
-</head>
     <main>
-<button id="returnHome">Return Home</button>
+      <header id="printedMessage">
+        <span>Printed Addresses</span>
+      </header>
 
-<body>
-    <table id="addressTable"> Addresses </table>
-    <div><button id="Edit"> EDIT</button></div>
-    <div><button id="Delete"> DELETE</button></div>
+      <div id="addressTable">
+        <table class="table is-hoverable is-striped is-bordered">
+          <thead>
+            <tr>
+              <th><abbr title="name">Name</abbr></th>
+              <th><abbr title="number">Phone Number</abbr></th>
+              <th><abbr title="address">Street Address</abbr></th>
+              <th><abbr title="city">City</abbr></th>
+              <th><abbr title="state">State</abbr></th>
+            </tr>
+          </thead>
 
-    
-    
-</body>
-<footer>
-    <button id="About">About</button>
-    <button id="Contact">Contact Us</button>
-</footer>
+          <tbody>
+            <tr>
+              <td>38</td>
+              <td>23</td>
+              <td>12</td>
+              <td>3</td>
+              <td>68</td>
+            </tr>
+            <tr>
+              <td>38</td>
+              <td>23</td>
+              <td>12</td>
+              <td>3</td>
+              <td>68</td>
+            </tr>
+            <tr>
+              <td>38</td>
+              <td>23</td>
+              <td>12</td>
+              <td>3</td>
+              <td>68</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="buttons button-group-2">
+        <button
+          class="button is-link"
+          onclick="location.href='../Edit/edit.html'"
+        >
+          Edit
+        </button>
+        <button class="button is-link">Delete</button>
+      </div>
     </main>
+
+    <footer>
+      <button id="About">About</button>
+      <button id="Contact">Contact Us</button>
+    </footer>
+  </body>
 </html>

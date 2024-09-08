@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Address</title>
     <link rel="stylesheet" href="edit.css">
-    <script src="edit.js"></script>
+    <script defer src="./edit.js"></script>
+    <!-- <script defer src="logic.js"></script> -->
+
 </head>
     <main>
         <button
@@ -75,4 +78,29 @@
 
     </main>
         
+        <label for="editCriteria">What would you like to edit?</label>
+
+        <select name="editDropDown" id="editDropDown">
+            <option value="name">Full Name</option>
+            <option value="phoneNumber">Phone Number</option>
+            <option value="streetAddress">Street Address</option>
+            <option value="city">City</option>
+            <option value="state">State</option>
+        </select>
+        <div>
+            <form id="editInput">
+                <label for="editedText">Edit to:</label>
+                <input type="text" id="editBar" name="editBar" required>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+        </main>
+
+        
+    <footer>
+        <button id="About">About</button>
+        <button id="Contact">Contact Us</button>
+    </footer>
+</body>
+
 </html>
