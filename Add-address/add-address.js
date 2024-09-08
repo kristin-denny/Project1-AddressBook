@@ -1,12 +1,3 @@
-// function intializeStorage(){
-//     if(localStorage.length == 0){
-//         const addressBook = [];
-//         localStorage.setItem("addressBook"), JSON.stringify(addressBook);
-
-//     }
-
-// }
-
 document
   .getElementById("addressEntry")
   .addEventListener("submit", function (event) {
@@ -31,7 +22,6 @@ document
     addressBook.push(addressEntry);
 
     localStorage.setItem("addressBook", JSON.stringify(addressBook));
-    window.location.assign("./Additional/additional.html");
-  });
 
-//intializeStorage();
+    window.location.assign("../Additional/additional.html");
+  });
