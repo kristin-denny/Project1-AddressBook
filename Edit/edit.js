@@ -56,10 +56,12 @@ function editEntry(){
         const editThis = document.getElementById("editBar");
         const objprop = searchChoice.value;
         const replaceWith = editThis.value;
+        console.log(objprop);
+        console.log(replaceWith);
 
         addressBook[objprop] = replaceWith;
         localStorage.setItem("addressBook", JSON.stringify(addressBook));
-        location.reload();
+        
 
     });
   
