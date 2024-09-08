@@ -58,7 +58,8 @@ function editEntry(){
         const replaceWith = editThis.value;
         console.log(objprop);
         console.log(replaceWith);
-
+        console.log(addressBook[objprop]);
+        
         addressBook[objprop] = replaceWith;
         localStorage.setItem("addressBook", JSON.stringify(addressBook));
         
