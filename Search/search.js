@@ -3,21 +3,17 @@ const mainPiece = document.querySelector('main');
 
 document.getElementById("searchInput").addEventListener("submit", function (event) {
     event.preventDefault();
-    // const searchChoice = document.getElementById("searchDropDown");
+    const searchChoice = document.getElementById("searchDropDown");
+    const lookIn = searchChoice.value;
     let indexOfItem;
     const findThis = document.getElementById("searchBar");
     const searchFor = findThis.value;
+    console.log(searchFor);
+    console.log(lookIn);
     const addressBook = JSON.parse(localStorage.getItem("addressBook"));
     
-
-    const isThere = addressBook.find(function(element, index){ 
-        if(searchFor in element){ 
-            indexOfItem = index;
-            return true;
-        }else{
-            return false;
-        }
-    });
+    const isThere = addressBook.find((address) => address[lookIn] === searchFor);
+    
 
 
     if(isThere){
