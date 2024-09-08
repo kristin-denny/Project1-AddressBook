@@ -9,9 +9,14 @@ document.getElementById("searchInput").addEventListener("submit", function (even
     const findThis = document.getElementById("searchBar");
     const searchFor = findThis.value;
     const addressBook = JSON.parse(localStorage.getItem("addressBook"));
+    console.log(searchFor);
+    console.log(lookIn);
     
-   const isThere = addressBook.find((address, index) => {if(address[lookIn] === searchFor){
+
+
+   const isThere = addressBook.find((address, index) => {if(address[lookIn] == searchFor){
         indexOfItem = index;
+        console.log(address);
    }});
    
   
@@ -23,7 +28,6 @@ document.getElementById("searchInput").addEventListener("submit", function (even
        
     }
     else{
-
         alert("None found, please try again.");
     }
     
