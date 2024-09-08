@@ -1,6 +1,6 @@
 const mainPiece = document.querySelector('main');
 
-function printAddress(infoToAppend){
+function printAddress(infoToAppend) {
 
     const cardBase = document.createElement('article');
     cardBase.classList.add('card');
@@ -41,21 +41,27 @@ function printAddress(infoToAppend){
     cardBase.appendChild(cityToAdd);
     cardBase.appendChild(stateHeader);
     cardBase.appendChild(stateToAdd);
-    
+
 
 };
 
-function printTable(){
-    const addressBook = JSON.parse(localStorage.getItem("addressBook"));
+function printTable() {
+    const addressBook = JSON.parse(localStorage.getItem("addressBook")) || [];
 
-    if(addressBook.length == 0) {
-        console.log('emptyempty');
+    if (addressBook.length == 0){
+
+        const cardBase = document.createElement('article');
+        cardBase.classList.add('card');
+        const noneHeader = document.createElement('h2');
+        noneHeader.textContent = "No entries yet.";
+        mainPiece.appendChild(cardBase);
+        cardBase.appendChild(noneHeader);
     }
-    else{
+    else {
         for (var x = 0; x < addressBook.length; x++) {
             let infoToPass = addressBook[x];
             printAddress(infoToPass);
-            
+
         }
     }
 

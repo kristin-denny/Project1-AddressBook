@@ -4,29 +4,34 @@ const mainPiece = document.querySelector('main');
 document.getElementById("searchInput").addEventListener("submit", function (event) {
     event.preventDefault();
     const searchChoice = document.getElementById("searchDropDown");
+    const lookIn = searchChoice.value;
     let indexOfItem;
-    //const findThis = document.getElementById("searchBar");
-    const searchFor = searchChoice.value;
+    const findThis = document.getElementById("searchBar");
+    const searchFor = findThis.value;
     const addressBook = JSON.parse(localStorage.getItem("addressBook"));
     
-    const isThere = addressBook.find(function(element, index){ 
-        if(searchFor in element){ 
-            indexOfItem = index;
-            return element;
-        }else{
-            return false;
-        }
-    });
+    
+
+
+   const isThere = addressBook.find((address, index) => {if(address[lookIn] == searchFor){
+        indexOfItem = index;
+        return true;
+   }});
+   
+  
+   
 
     if(isThere){
-         printAddress(isThere, indexOfItem);
-         window.location.assign("display.js");
+        localStorage.setItem("foundAt", indexOfItem);
+        window.location.assign("../Address-Display/display.html");
        
     }
     else{
-        const noneFound = document.createElement('h2');
-        noneFound.textContent = "None found.";
-        mainPiece.appendChild(noneFound);
+        alert("None found, please try again.");
     }
+    
+    
+    
+    
 });
 

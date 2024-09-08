@@ -4,35 +4,34 @@ const toPrintAllPage = document.getElementById("PrintAll");
 const toAboutPage = document.getElementById("About");
 const toContactPage = document.getElementById("Contact");
 
-console.log(toSearchPage);
 
 toSearchPage.addEventListener('click', function(event){
     event.preventDefault();
     window.location.assign("Search/search.html");
-    //console.log("search clicked");
+    
 
 });
 
 toAddPage.addEventListener('click', function(event){
     event.preventDefault();
     window.location.assign("Add-address/add-address.html");
-    //console.log("add clicked");
+    
 });
 
 toPrintAllPage.addEventListener('click', function(event){
     event.preventDefault();
-    window.location.assign("Address-Display/display.html");
-    //console.log("print all clicked");
-});
-
-toAboutPage.addEventListener('click', function(event){
-    event.preventDefault();
-   // window.location.assign("url");
-    console.log("about clicked");
+    window.location.assign("Table/table.html");
+    
 });
 
 toContactPage.addEventListener('click', function(event){
     event.preventDefault();
-    ///window.location.assign("url");
-    console.log("contact clicked");
+    window.location.assign("contact.html");
+    
+});
+
+toAboutPage.addEventListener('click', function(event){
+    event.preventDefault();
+    window.location.assign("about.html");
+    
 });

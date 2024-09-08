@@ -1,8 +1,10 @@
 const mainPiece = document.querySelector('main');
+const indexOf = localStorage.getItem("foundAt");
+const addressBook = JSON.parse(localStorage.getItem("addressBook"));
 
-function editEntry(indexOfEdit){
-    const addressBook = JSON.parse(localStorage.getItem("addressBook"));
-    const infoToAppend = addressBook[indexOfEdit];
+function editEntry(){
+    
+    const infoToAppend = addressBook[indexOf];
 
     const cardBase = document.createElement('article');
     cardBase.classList.add('card');
@@ -51,19 +53,20 @@ function editEntry(indexOfEdit){
     document.getElementById("editInput").addEventListener("submit", function (event) {
         event.preventDefault();
         const searchChoice = document.getElementById("editDropDown");
-        const editThis = document.getElementById("editedText");
+        const editThis = document.getElementById("editBar");
         const objprop = searchChoice.value;
         const replaceWith = editThis.value;
+        console.log(objprop);
+        console.log(replaceWith);
+        console.log(addressBook[indexOf][objprop]);
 
         addressBook[objprop] = replaceWith;
         localStorage.setItem("addressBook", JSON.stringify(addressBook));
-        location.reload();
+       
 
     });
-
-
-
-
-    
+  
 
 }
+
+editEntry();
