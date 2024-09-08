@@ -62,7 +62,7 @@ document.getElementById("Edit").addEventListener("click", function (event) {
 
 document.getElementById("Delete").addEventListener("click", function (event) {
     event.preventDefault();
-    
+
     addressBook.splice(indexOf, 1);
     localStorage.setItem("addressBook", JSON.stringify(addressBook));
     window.location.assign("../index.html");
@@ -71,4 +71,4 @@ document.getElementById("Delete").addEventListener("click", function (event) {
 
 });
 
-    
+ printAddress();   

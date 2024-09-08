@@ -62,10 +62,8 @@ function editEntry(){
         location.reload();
 
     });
-
-
-
-
-    
+  
 
 }
+
+editEntry();
