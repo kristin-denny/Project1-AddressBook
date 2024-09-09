@@ -30,6 +30,20 @@ function printAddress(infoToAppend) {
     const stateToAdd = document.createElement('p');
     stateToAdd.textContent = infoToAppend.state;
 
+    nameHeader.classList.add("title", "is-5");
+    phoneHeader.classList.add("title", "is-5");
+    streetHeader.classList.add("title", "is-5");
+    cityHeader.classList.add("title", "is-5");
+    stateHeader.classList.add("title", "is-5");
+  
+    nameToAdd.classList.add("content");
+    phoneToAdd.classList.add("content");
+    streetToAdd.classList.add("content");
+    cityToAdd.classList.add("content");
+    stateToAdd.classList.add("content");
+    const cardContent = document.createElement("div");
+    cardContent.classList.add("card-content");
+
     mainPiece.appendChild(cardBase);
     cardBase.appendChild(nameHeader);
     cardBase.appendChild(nameToAdd);
