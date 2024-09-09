@@ -30,6 +30,9 @@ function printAddress(infoToAppend) {
     const stateToAdd = document.createElement('p');
     stateToAdd.textContent = infoToAppend.state;
 
+    cardBase.style.padding = "var(--bulma-card-header-padding)";
+    cardBase.style.padding = "var(--bulma-card-content-padding)";
+    
     nameHeader.classList.add("title", "is-5");
     phoneHeader.classList.add("title", "is-5");
     streetHeader.classList.add("title", "is-5");

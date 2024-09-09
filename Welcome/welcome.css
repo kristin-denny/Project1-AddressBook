@@ -17,3 +17,10 @@
   color: rgb(5, 5, 5);
   margin-top: 150px;
 }
+.button-group-2 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}

@@ -25,3 +25,10 @@
   flex-wrap: wrap;
   display: flex;
 }
+.button-group-2 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}

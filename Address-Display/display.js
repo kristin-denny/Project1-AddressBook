@@ -36,6 +36,9 @@ function printAddress(){
     const stateToAdd = document.createElement('p');
     stateToAdd.textContent = infoToAppend.state;
 
+    cardBase.style.padding = "var(--bulma-card-header-padding)";
+    cardBase.style.padding = "var(--bulma-card-content-padding)";
+    
     mainToAppend.appendChild(cardBase);
     cardBase.appendChild(nameHeader);
     cardBase.appendChild(nameToAdd);
