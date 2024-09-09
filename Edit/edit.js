@@ -60,7 +60,7 @@ function editEntry(){
         console.log(replaceWith);
         console.log(addressBook[indexOf][objprop]);
 
-        addressBook[objprop] = replaceWith;
+        addressBook[indexOf][objprop] = replaceWith;
         localStorage.setItem("addressBook", JSON.stringify(addressBook));
        
 
