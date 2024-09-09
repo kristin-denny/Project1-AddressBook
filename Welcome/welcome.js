@@ -3,7 +3,7 @@ const toAddPage = document.getElementById("Add");
 const toPrintAllPage = document.getElementById("PrintAll");
 const toAboutPage = document.getElementById("About");
 const toContactPage = document.getElementById("Contact");
-const returnHome = document.getElementById("returnHome");
+
 
 toSearchPage.addEventListener('click', function(event){
     event.preventDefault();
@@ -36,8 +36,4 @@ toAboutPage.addEventListener('click', function(event){
     
 });
 
-returnHome.addEventListener('click', function(event){
-    event.preventDefault();
-    window.location.assign("../index.html");
-    
-});
+
