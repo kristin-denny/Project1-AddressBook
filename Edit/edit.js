@@ -49,6 +49,20 @@ function editEntry(){
     cardBase.appendChild(stateHeader);
     cardBase.appendChild(stateToAdd);
 
+    nameHeader.classList.add("title", "is-5");
+    phoneHeader.classList.add("title", "is-5");
+    streetHeader.classList.add("title", "is-5");
+    cityHeader.classList.add("title", "is-5");
+    stateHeader.classList.add("title", "is-5");
+  
+    nameToAdd.classList.add("content");
+    phoneToAdd.classList.add("content");
+    streetToAdd.classList.add("content");
+    cityToAdd.classList.add("content");
+    stateToAdd.classList.add("content");
+    const cardContent = document.createElement("div");
+    cardContent.classList.add("card-content");
+
 
     document.getElementById("editInput").addEventListener("submit", function (event) {
         event.preventDefault();
